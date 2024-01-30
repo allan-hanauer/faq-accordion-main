@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Work Sans;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background: url("../assets/images/background-pattern-desktop.svg") no-repeat hsl(279, 100%, 97%);
+  background-size: contain;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 566px;
+  width: 600px;
+  background-color: hsl(0, 0%, 100%);
+  border-radius: 15px;
+  padding: 40px;
+  box-shadow: 1px 2px 20px 5px hsla(292, 42%, 14%, 0.1);
+}
+
+.box__ {
+  display: flex;
+  gap: 25px;
+}
+
+.title {
+  color: hsl(292, 42%, 14%);
+  font-size: 3.5rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.list-faq {
+  list-style: none;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.list-faq li {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.list-faq li .content-title {
+  display: flex;
+  justify-content: space-between;
+  color: hsl(292, 42%, 14%);
+  align-items: center;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  transition: 0.5s;
+}
+.list-faq li .content-title img {
+  cursor: pointer;
+}
+.list-faq li .content-title:hover {
+  color: hsl(287, 60%, 52%);
+}
+.list-faq li .content-desc {
+  color: hsl(292, 16%, 49%);
+  padding-top: 31px;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.padding-title {
+  margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    background: url(../assets/images/background-pattern-mobile.svg) no-repeat hsl(279, 100%, 97%);
+    background-size: contain;
+    height: auto;
+    width: 100vw;
+    flex-direction: column;
+    justify-content: start;
+  }
+  main {
+    margin-top: 141px;
+    width: 370px;
+  }
+}/*# sourceMappingURL=styles.css.map */
